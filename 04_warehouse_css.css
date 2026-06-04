@@ -1,0 +1,144 @@
+* { 
+    padding: 0;
+    /* コンテンツから枠線までの内側の余白を全方位0pxに。 */
+    margin: 0;
+    /* 要素の枠線の外側の余白を全方位0pxに。他の要素との距離を保つ。 */
+    box-sizing: border-box;
+    /* 余白:padding, 枠線:borderを含めて、指定した幅:widthに収める */
+}
+/* *{}でくくるとページ全体に反映される */
+
+
+body {
+    background: #F8F8F8;
+    /* 背景に関する設定全般に対応。今回は薄いグレーに指定 */
+}
+/* ページ全体の基本設定はbodyタグに書く */
+
+
+.header {
+    background: #fff;
+    padding: 30px 0;
+    /* 上下は30px、左右は0px余白をとる */
+}
+/* class="header"と指定した箇所に適応 */
+
+
+.header .title {
+    display: flex;
+    /* 要素を横並び、または縦並びにする */
+    justify-content: center;
+    /* 横方向の中央揃えにする。display:flexとセットで使う */
+    text-align: center;
+    /* 文字を中央揃えにする */
+    font-size: 30px;
+    /* 文字の大きさを30pxにする */
+    font-weight: bold;
+    /* 文字を太字にする */
+    color: #209A66;
+    /* 文字の色を指定 */
+    margin-bottom: 20px;
+    /* 下側に20pxの外側余白をあける。次の要素との間隔 */
+}
+
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    /* 並びにした項目と項目の間のすき間をあける */
+}
+
+
+.header li{
+    list-style-type: none;
+    /* リストの先頭につく点（・）を消す */
+    font-size: 18px;
+}
+
+
+.herosection {
+    max-width: 2000px;
+    /* 横幅の上限を制限する。画面が広くてもこれ以上大きくならない */
+    background: #429454;
+    padding: 50px;
+    margin: 0 auto;
+    /* 上下の余白を0pxに。左右の余白はブラウザに自動計算させ、残ったスペースを均等にわけるため真ん中に表示される */
+}
+
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    /* color: #fff; */
+    margin-bottom: 20px;
+}
+
+
+.hero-description {
+    font-size: 18px;
+    color: #efefef;
+    margin-bottom: 20px;
+}
+
+
+.hero-anchor {
+    display: inline-block;
+    /* リンク文字をボタンとしてサイズ(width/height)調整できるようにする */
+    background: #173726;
+    color: #fff;
+    padding: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    /* リンクに付くデフォルトの下線を非表示 */
+    display: inline-block;
+    color: #000;
+}
+
+.warehouse {
+    padding: 20px 25px;
+}
+
+.warehouse_bigger {
+    padding: 20px 25px;
+}
+
+
+/*** ここまで確認済み ***/
+
+
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    /* width: 80%; */
+    background: #fff;
+}
+
+table th, table td {
+    border: solid 1px black;
+}
+
+table th {
+    padding: 3px 10px;
+    background: lightgray;
+    font-size: 14px;
+}
+
+table td {
+    padding: 3px 10px;
+}
+
+td:nth-child(2) {
+    background: #efefef;
+}
+
+td:nth-child(3) {
+    background: #efefef;
+}
+
+td:nth-child(3) {
+    text-align: right;
+}
